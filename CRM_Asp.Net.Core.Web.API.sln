@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAcce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOs", "DTOs\DTOs.csproj", "{21BE14EF-0CAF-43CC-9C89-574BA0135E0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tajriba", "Tajriba\Tajriba.csproj", "{980952FD-DBC5-4751-9448-54A3DBF452F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{21BE14EF-0CAF-43CC-9C89-574BA0135E0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21BE14EF-0CAF-43CC-9C89-574BA0135E0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21BE14EF-0CAF-43CC-9C89-574BA0135E0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{980952FD-DBC5-4751-9448-54A3DBF452F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{980952FD-DBC5-4751-9448-54A3DBF452F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{980952FD-DBC5-4751-9448-54A3DBF452F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{980952FD-DBC5-4751-9448-54A3DBF452F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
