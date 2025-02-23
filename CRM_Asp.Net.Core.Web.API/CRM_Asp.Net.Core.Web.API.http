@@ -1,0 +1,6 @@
+@CRM_Asp.Net.Core.Web.API_HostAddress = http://localhost:5022
+
+GET {{CRM_Asp.Net.Core.Web.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
