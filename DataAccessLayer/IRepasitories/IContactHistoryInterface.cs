@@ -7,7 +7,7 @@ using DataAccessLayer.Models;
 
 namespace DataAccessLayer.IRepasitories
 {
-    public interface IOrderRepasitory : IRepasitory<Order> 
+    public interface IContactHistoryInterface : IRepasitory<ContactHistory>
     {
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM_Asp.Net.Core.Web.API", "CRM_Asp.Net.Core.Web.API\CRM_Asp.Net.Core.Web.API.csproj", "{151E5F37-11F7-49E7-9A16-CDA798626401}"
 EndProject
@@ -12,6 +12,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOs", "DTOs\DTOs.csproj", "{21BE14EF-0CAF-43CC-9C89-574BA0135E0C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tajriba", "Tajriba\Tajriba.csproj", "{980952FD-DBC5-4751-9448-54A3DBF452F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F08EDF0D-9741-4E6E-A0AA-397215A9DA01}"
+	ProjectSection(SolutionItems) = preProject
+		Muhim.rmd = Muhim.rmd
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

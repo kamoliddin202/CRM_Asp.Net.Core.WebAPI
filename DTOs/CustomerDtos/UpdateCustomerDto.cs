@@ -9,6 +9,7 @@ namespace DTOs.CustomerDtos
 {
     public class UpdateCustomerDto
     {
+        public int Id { get; set; }
         public string Name { get; set; }     // Mijozning ismi
         public string Email { get; set; }    // Mijozning email manzili
         public string Phone { get; set; }     // Mijozning telefon raqami

@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using DataAccessLayer.Models;
 
-namespace DataAccessLayer.IRepasitories
+namespace DTOs.CategoryDtos
 {
-    public interface IProductRepasitory : IRepasitory<Product>
+    public class UpdateCategoryDto
     {
-         
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }

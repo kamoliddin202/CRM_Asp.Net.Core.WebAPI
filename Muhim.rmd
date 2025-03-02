@@ -1,0 +1,40 @@
+C# dasturlash tilida interfeys - bu sinfning adazasi. U abstract calassga o'xshaydi, chunki interfeys ichida 
+e'lon qilingan barcha metodlar abstract metodlardir. interface metodlari tanasi yozilmaydi va undan obyekt yaratib bo'lmaydi.
+Interfeysni nomining oldiga katta "I" harfi qo'yib e'lon qilasiz.
+
+
+# region Constructor 
+
+constructor - classning  yoki structning instancesi yaratilganda Runtime tomoninda chaqiriladigan maxsus metod. C#da  OOp ning 
+asosiy tarkibiy qismlaridan biri xisoblanadi. Class memberlarini initializatsiya qilish uchun ishlatiladi. 
+Sinf konstruktori o'zi joylashgan sinf nomi bilan bir xil nomga ega bo'lishi kerak.
+Sinfda istalgancha konstruktor bo'lishi mumkin.
+Konstruktor mavhum (abstract), yakuniy (final) yoki sinxronlashtirilgan (synchronized) bo'la olmaydi.
+Konstruktorning hech qanday qaytarish turi bo'lmaydi.
+classni obekti yaratilganda ovtomatik ishga tushadi.
+
+C# dasturlash tilida turli xil konstruktor turlari mavjud bo‘lib, ularning har biri o‘ziga xos maqsadlarga xizmat qiladi.
+Default Constructor
+Parameterized Constructor
+Copy Constructor
+Private Constructor
+Static Constructor
+
+default constructor - parametrsiz constructor default constructor deyiladi. U classning obektlarini default qiymat berish uchun ishlatiladi.
+int uchun 0 and string yoki obektlar uchun null. 
+
+parametrized constructor - eng kamida bitta parametrga ega bo'lgan constructorga aytiladi. u classni obektlariga turli qiymat birishi mumkin.
+
+copy constructor - A copy constructor is used to create a new object by copying the values from an existing object of 
+the same class. Useful when you need to duplicate an object or create a new object based on the state of another.
+> Nusxa konstruktor yangi ob'ektni xuddi shu sinfning mavjud ob'ektidagi qiymatlarni nusxalash orqali yaratish uchun ishlatiladi. 
+Bu ob'ektni ikkiga ko'paytirish yoki boshqa ob'ektning holatiga asoslangan yangi ob'ekt yaratish kerak bo'lganda foydalidir.
+
+private constructor = boshqa sinlar ushube classdan meroz ololmaydi. va bu classni instancesini ham yaratib bo'lmaydi. 
+pricate constructor faqat static memberlarga ega bo'laganimizda ishlatiladi. 
+
+static constructor - sinfdagi static memberga	birinchi marta access qilinganda faqat bir martagina ishga tushiriladi. 
+static constructor classning static fieldlar yoki datalarini initializatsiya qilib faqat bir marta ishlaydi.
+
+https://www.geeksforgeeks.org/c-sharp-constructors/
+#endregion 

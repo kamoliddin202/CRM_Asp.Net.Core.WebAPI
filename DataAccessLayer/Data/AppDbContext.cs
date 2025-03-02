@@ -1,4 +1,5 @@
 ﻿using DataAccessLayer.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessLayer.Data
@@ -13,6 +14,7 @@ namespace DataAccessLayer.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<ContactHistory> ContactHistories { get; set; } // Ixtiyoriy
+        public DbSet<Category> Categories { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -34,6 +36,11 @@ namespace DataAccessLayer.Data
                 .HasOne(c => c.Customer)
                 .WithMany(c => c.Orders)
                 .HasForeignKey(c => c.CustomerId);
+
+            modelBuilder.Entity<Product>()
+                    .HasOne(c => c.Category)
+                    .WithMany(c => c.Products)
+                    .HasForeignKey(c => c.CategoryId);
 
         }
 
