@@ -62,5 +62,7 @@ namespace CRM_Asp.Net.Core.Web.API.Controllers
             var cateogry = await _categoryService.GetCategoryWithBooksAsync(id);
             return Ok(cateogry);
         }
+
+
     }
 }
