@@ -1,5 +1,6 @@
 ﻿using BusinessLogicLayer.IServices;
 using DTOs.CategoryDtos;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,6 +8,7 @@ namespace CRM_Asp.Net.Core.Web.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CategoryController : ControllerBase
     {
         private readonly ICategorySerivice _categoryService;
@@ -17,6 +19,7 @@ namespace CRM_Asp.Net.Core.Web.API.Controllers
         }
 
         [HttpGet]
+        //[Authorize]
         public async Task<IActionResult> Get()
         {
             var categories = await _categoryService.GetAllCategoriesAsync();

@@ -11,29 +11,45 @@
 //throw new FileNotFoundException();
 
 
-using System.Runtime.Serialization;
+//using System.Runtime.Serialization;
 
-throw new MyCustomException();
+//throw new MyCustomException();
 
 
 
-public class MyCustomException : Exception
+//public class MyCustomException : Exception
+//{
+//    public MyCustomException() 
+//        : base() 
+//    {}
+//    public MyCustomException(string  message) 
+//        : base(message)
+//    {}
+
+//    public MyCustomException(string message, Exception innerException)
+//        :base(message, innerException) 
+//    {}
+
+//    public MyCustomException(SerializationInfo serializationEntries, StreamingContext context) 
+//        :base(serializationEntries, context) 
+//    {}  
+
+
+
+//}
+
+
+using Microsoft.AspNetCore.Authorization.Infrastructure;
+using Microsoft.AspNetCore.Identity;
+
+bool VeryfyPassword(string hashedPassword, string providedPasswor)
 {
-    public MyCustomException() 
-        : base() 
-    {}
-    public MyCustomException(string  message) 
-        : base(message)
-    {}
+    var passwordHasher = new PasswordHasher<object>();
+    var result = passwordHasher.VerifyHashedPassword(null, hashedPassword, providedPasswor);
 
-    public MyCustomException(string message, Exception innerException)
-        :base(message, innerException) 
-    {}
-
-    public MyCustomException(SerializationInfo serializationEntries, StreamingContext context) 
-        :base(serializationEntries, context) 
-    {}  
-
-
-
+    return result == PasswordVerificationResult.Success; 
 }
+
+
+Console.WriteLine(VeryfyPassword("AQAAAAIAAYagAAAAENdiFvwcbENF5E5Q8q5LsnRGF5e2+hyrsg9XHq4PHdC9OI72iGvUWZLI6McNIAd0rw==", "Admin.123$"));
+

@@ -41,6 +41,7 @@ namespace DTOs
             CreateMap<AddCategoryDto, Category>();
             CreateMap<UpdateCategoryDto, Category>()
                     .ForMember(dest => dest.Id, src => src.Ignore());
+
                 
         }
     }
